@@ -42,7 +42,6 @@ app.post("/removetask", function(req, res) {
 app.post("/returntask", function(req, res) {
     var completeTask = req.body.check;
     //check for the "typeof" the different completed task, then add into the complete task
-    console.log(completeTask)
     if (typeof completeTask === "string") {
         task.push(completeTask);
         //check if the completed task already exits in the task when checked, then remove it
